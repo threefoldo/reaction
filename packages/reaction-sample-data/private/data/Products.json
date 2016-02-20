@@ -86,5 +86,92 @@
     "parentId": "6qiqPwBkeJdtdQc4G",
     "optionTitle": "Green"
   }],
+  "extra1": "physical goods",
+  "extra2": "household",
   "vendor": "Example Manufacturer"
-}]
+},
+  {
+    "_id": "BCTMZ6HTxFSppJES0",
+    "shopId": "J8Bhq3uTtdgwZx3rz",
+    "createdAt": {
+      "$date": "2014-04-03T13:46:52.411-0700"
+    },
+    "description": "Font Awesome (official): 470+ scalable vector icons, customizable via CSS, Retina friendly",
+    "handle": "fontawesome",
+    "hashtags": [
+    ],
+    "isVisible": true,
+    "pageTitle": "fortawesome:fontawesome",
+    "type": "simple",
+    "title": "fortawesome:fontawesome",
+    "updatedAt": {
+      "$date": "2014-06-01T12:17:13.949-0700"
+    },
+    "extra1": "virtual goods",
+    "extra2": "font",
+    "vendor": "Example Manufacturer"
+  },
+  {
+    "_id": "BCTMZ6HTxFSppJES1",
+    "shopId": "J8Bhq3uTtdgwZx3rz",
+    "createdAt": {
+      "$date": "2014-04-03T13:46:52.411-0700"
+    },
+    "description": "Syntactically awesome style sheets.",
+    "handle": "sass",
+    "hashtags": [
+    ],
+    "isVisible": true,
+    "pageTitle": "arsnebula:sass",
+    "type": "simple",
+    "title": "arsnebula:sass",
+    "updatedAt": {
+      "$date": "2014-06-01T12:17:13.949-0700"
+    },
+    "extra1": "virtual goods",
+    "extra2": "css",
+    "vendor": "Example Manufacturer"
+  },
+  {
+    "_id": "BCTMZ6HTxFSppJES2",
+    "shopId": "J8Bhq3uTtdgwZx3rz",
+    "createdAt": {
+      "$date": "2014-04-03T13:46:52.411-0700"
+    },
+    "description": "ZURB Foundation Icons (all) - awesome icons using CSS",
+    "handle": "foundationicons",
+    "hashtags": [
+    ],
+    "isVisible": true,
+    "pageTitle": "iain:foundation-icons",
+    "type": "simple",
+    "title": "iain:foundation-icons",
+    "updatedAt": {
+      "$date": "2014-06-01T12:17:13.949-0700"
+    },
+    "extra1": "virtual goods",
+    "extra2": "icons",
+    "vendor": "Example Manufacturer"
+  },
+  {
+    "_id": "BCTMZ6HTxFSppJES0",
+    "shopId": "J8Bhq3uTtdgwZx3rz",
+    "createdAt": {
+      "$date": "2014-04-03T13:46:52.411-0700"
+    },
+    "description": "summernote (official): jQuery+Bootstrap+FontAwesome WYSIWYG editor with embedded images support",
+    "handle": "summernote",
+    "hashtags": [
+    ],
+    "isVisible": true,
+    "pageTitle": "summernote:summernote",
+    "type": "simple",
+    "title": "summernote:summernote",
+    "updatedAt": {
+      "$date": "2014-06-01T12:17:13.949-0700"
+    },
+    "extra1": "virtual goods",
+    "extra2": "editor",
+    "vendor": "Example Manufacturer"
+  }
+]

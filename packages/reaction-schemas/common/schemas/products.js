@@ -266,6 +266,18 @@ ReactionCore.Schemas.Product = new SimpleSchema({
     type: String,
     optional: true
   },
+  extra1: {
+    label: "Extra1",
+    type: String,
+    optional: true,
+    defaultValue: "N/A"
+  },
+  extra2: {
+    label: "Extra2",
+    type: String,
+    optional: true,
+    defaultValue: "N/A"
+  },
   type: {
     label: "Type",
     type: String,

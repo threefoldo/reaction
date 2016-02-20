@@ -7,7 +7,7 @@ var options = {
   keepHistory: 1000 * 60 * 5,
   localSearch: true
 };
-var fields = ['title', 'description'];
+var fields = ['extra1', 'extra2'];
 ProductSearch = new SearchSource('products', fields, options);
 
 Tracker.autorun(function(){
