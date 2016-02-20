@@ -74,3 +74,5 @@ reactioncommerce:default-theme          # default Reaction theme
 
 # Forced updates on packages
 mdg:validation-error@0.4.0
+meteorhacks:search-source
+check

@@ -51,3 +51,29 @@ Template.CoreNavigationBar.helpers({
     };
   }
 });
+
+
+var options = {
+  keepHistory: 1000 * 60 * 5,
+  localSearch: true
+};
+var fields = ['title', 'description'];
+
+ProductSearch = new SearchSource('products', fields, options);
+
+Template.searchBox.events({
+  "keyup #searchBox": _.throttle(function(e) {
+    var text = $(e.target).val().trim();
+    console.log('keyup', text)
+    ProductSearch.search(text);
+  }, 500)
+});
+
+Template.searchBox.helpers({
+  getProducts: function() {
+    return ProductSearch.getData().length;
+  },
+  isLoading: function() {
+    return ProductSearch.getStatus().loading;
+  }
+});

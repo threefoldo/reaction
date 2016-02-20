@@ -6,10 +6,15 @@
     <div class="menu">
       {{> tagNav tagNavProps}}
     </div>
-
+      <div class="search">{{> searchBox}}</div>
     <div class="languages hidden-xs">{{> i18nChooser}}</div>
     <div class="accounts">{{> accounts tpl="loginDropdown"}}</div>
     <div class="cart">{{> cartIcon}}</div>
     <div class="cart-alert">{{> cartPanel}}</div>
   </div>
+</template>
+
+<template name="searchBox">
+    <input type="text" id="searchBox" placeholder="Search Products...">
+    <p>{{getProducts}}</p>
 </template>

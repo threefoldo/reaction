@@ -24,6 +24,7 @@ Package.onUse(function (api) {
   api.use("check");
   api.use("less");
   api.use("reactive-dict");
+  api.use("meteorhacks:search-source");
 
   // meteor add-on packages
   api.use("reactioncommerce:core@0.12.0");
@@ -49,6 +50,7 @@ Package.onUse(function (api) {
 
   // Register Package
   api.addFiles("server/register.js", "server");
+  api.addFiles("server/search.js", "server");
 
   // api.addFiles("client/styles/base.less", "client");
 });
