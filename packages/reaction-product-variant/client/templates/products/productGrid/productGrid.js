@@ -2,6 +2,19 @@
  * productGrid helpers
  */
 
+
+var options = {
+  keepHistory: 1000 * 60 * 5,
+  localSearch: true
+};
+var fields = ['title', 'description'];
+ProductSearch = new SearchSource('products', fields, options);
+
+Tracker.autorun(function(){
+  console.log(Session.get('SearchText'));
+  ProductSearch.search(Session.get('SearchText'), {});
+});
+
 /**
  * loadMoreProducts
  * @summary whenever #productScrollLimitLoader becomes visible, retrieve more results
@@ -117,7 +130,8 @@ Template.productGrid.helpers({
       return a.position.position - b.position.position;
     }
 
-    let gridProducts = ReactionCore.Collections.Products.find({}).fetch();
+    //let gridProducts = gridProducts = ReactionCore.Collections.Products.find({}).fetch();
+    let gridProducts = ProductSearch.getData();
 
     for (let index in gridProducts) {
       if ({}.hasOwnProperty.call(gridProducts, index)) {

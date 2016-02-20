@@ -28,6 +28,7 @@ Package.onUse(function (api) {
   api.use("http");
   api.use("reactive-var");
   api.use("reactive-dict");
+  api.use("meteorhacks:search-source");
 
   // community packages
   api.use("reactioncommerce:reaction-router@1.0.0");
@@ -35,6 +36,7 @@ Package.onUse(function (api) {
 
   // register package
   api.addFiles("server/register.js", "server");
+  api.addFiles("server/search.js", "server");
 
   // helpers
   api.addFiles("client/helpers/products.js", "client");
